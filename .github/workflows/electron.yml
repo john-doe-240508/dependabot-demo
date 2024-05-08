@@ -25,10 +25,10 @@ jobs:
         - name: Build
           run: |
             cd electron-quick-start
-            electron-packager . ElectronQuickStart --platform=win32 --arch=x86
+            electron-packager . ElectronQuickStart --platform=win32 --arch=ia32
   
         - name: Upload artifact
           uses: actions/upload-artifact@v4
           with:
-            name: ElectronQuickStart-win32-x86
-            path: electron-quick-start\ElectronQuickStart-win32-x86
+            name: ElectronQuickStart-win32-ia32
+            path: electron-quick-start\ElectronQuickStart-win32-ia32
